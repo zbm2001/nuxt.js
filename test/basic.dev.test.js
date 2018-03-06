@@ -43,14 +43,14 @@ test.serial('Init Nuxt.js', async t => {
 //   t.is(window.getComputedStyle(window.document.body).getPropertyValue('font-size'), '30px')
 // })
 
-test.serial('/stateless', async t => {
-  const spies = await intercept()
-  const window = await nuxt.renderAndGetWindow(url('/stateless'))
-  const html = window.document.body.innerHTML
-  t.true(html.includes('<h1>My component!</h1>'))
-  t.true(spies.info.calledWithMatch('You are running Vue in development mode.'))
-  release()
-})
+// test.serial('/stateless', async t => {
+//   const spies = await intercept()
+//   const window = await nuxt.renderAndGetWindow(url('/stateless'))
+//   const html = window.document.body.innerHTML
+//   t.true(html.includes('<h1>My component!</h1>'))
+//   t.true(spies.info.calledWithMatch('You are running Vue in development mode.'))
+//   release()
+// })
 
 // test('/_nuxt/test.hot-update.json should returns empty html', async t => {
 //   try {
