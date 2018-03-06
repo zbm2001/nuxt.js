@@ -1,10 +1,10 @@
 import test from 'ava'
 import { resolve } from 'path'
-import { intercept, release } from './helpers/console'
+import { intercept } from './helpers/console'
 import { Nuxt, Builder } from '..'
 
 const port = 4001
-const url = route => 'http://localhost:' + port + route
+// const url = route => 'http://localhost:' + port + route
 const rootDir = resolve(__dirname, 'fixtures/basic')
 
 let nuxt = null
